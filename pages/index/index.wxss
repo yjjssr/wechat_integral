@@ -1,0 +1,59 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.my-tabbar{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content:space-around;
+  align-items:center;
+  font-size:30rpx;
+  padding:10rpx 50rpx;
+  margin-bottom:30rpx;
+  box-sizing:border-box;
+}
+.tabbar-item{
+  width: 50%;
+  padding: 20rpx 0;
+}
+.tabbar-active{
+  color:#179B16;
+  border-bottom: 2px solid #179B16;
+}
+.my_body{
+  width: 100%;
+  padding:0 20rpx;
+box-sizing:border-box;
+
+}
+.my_form{
+  width: 100%;
+}
+.form_section{
+  margin-bottom: 30rpx;
+
+}
+.transation_code{
+  padding:20rpx;
+  border-radius:5px;
+  background-color: #F1F1F1;
+
+}
