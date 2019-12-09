@@ -22,6 +22,7 @@ page{
   padding:0 20rpx;
 box-sizing:border-box;
 text-align: center;
+padding-top: 20%;
 
 }
 .my_form{
