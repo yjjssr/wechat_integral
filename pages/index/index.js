@@ -11,6 +11,7 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     active_index:0,
+    is_diable:false
   },
   //事件处理函数
   bindViewTap: function() {
@@ -60,7 +61,8 @@ Page({
       active_index: e.currentTarget.dataset.active_index
     })
   },
-  formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+  integral_submit: function (e) {
+    console.log('获取积分，携带数据为：', e.detail.value)
   },
+ 
 })

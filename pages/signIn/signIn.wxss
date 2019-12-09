@@ -1,0 +1,92 @@
+.sign_in_wrap{
+  display:inline-block;
+padding:15rpx;
+background-color:#fce3bd;
+border-radius:50%;
+
+}
+.sign_in{
+box-sizing:border-box;
+font-size:18px;
+color:#fff;
+margin: 0 auto;
+line-height:2.56;
+border-radius:50%;
+width:66px;
+text-align:center;
+height:66px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.disable_button_bg{
+  background-color: #F7F7F7;
+} 
+.enable_button_bg{
+background-color:#fad045;
+
+}
+.sign_in_button{
+  background-color:transparent;
+  color: #fff;
+}
+
+.sign_in_button[disabled]{
+   background-color:transparent !important;
+}
+
+button[class="sign_in_button"]::after{
+  border: none;
+}
+.table{
+  margin-top: 80rpx;
+  background-color:#fff;
+border-radius:20rpx;
+font-weight:bold;
+
+
+}
+.tr{
+  display: flex;
+  
+}
+.tr:first-child{
+ border-bottom: 1px solid #F1F1F1;
+}
+.th{
+  flex: 1;
+  padding:15rpx;
+
+}
+.th:not(:last-child){
+  border-right: 1px solid #F1F1F1;
+}
+
+.without_border_top{
+  color: #e5971f;
+  padding:30rpx;
+
+}
+.form_wrap{
+  margin-top: 60rpx;
+}
+
+.extarct_bottom{
+  margin-top:20rpx;
+font-size:30rpx;
+text-align:right;
+color: #fff;
+
+}
+.extract_button_wrap{
+  display: flex;
+}
+.extract_button_wrap button{
+  
+  background-image: linear-gradient(#fab519, #fa6607)
+
+}
+.skip_to_app button{
+  margin-top: 50rpx;
+  background-color: #ffa800;
+}

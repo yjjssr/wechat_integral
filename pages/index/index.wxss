@@ -38,22 +38,17 @@
   color:#179B16;
   border-bottom: 2px solid #179B16;
 }
-.my_body{
-  width: 100%;
-  padding:0 20rpx;
-box-sizing:border-box;
+.top_item_wrap{
+  margin: 80rpx 0;
+}
+.btn-area{
+  display: flex;
+  margin-top: 120rpx;
+}
+.btn-area button{
+  background-image: linear-gradient(#fab519, #fa6607)
+}
 
-}
-.my_form{
-  width: 100%;
-}
-.form_section{
-  margin-bottom: 30rpx;
 
-}
-.transation_code{
-  padding:20rpx;
-  border-radius:5px;
-  background-color: #F1F1F1;
 
-}
+
