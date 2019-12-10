@@ -4,11 +4,20 @@
     <view class='tabbar-item {{active_index==0 && "tabbar-active"}}' data-active_index="0" bindtap='change_active_index'>积分获取</view>
     <view class='tabbar-item {{active_index==1 && "tabbar-active"}}' data-active_index="1" bindtap='change_active_index'>积分详情</view>
   </view> -->
-  <view  class='my_body'>
+  <!-- <view class='nav'>
+    <view class='nav-title' style='top:{{navTop}}px;height:{{navH}}px;line-height:{{navH}}px;'>
+      <span class='nav-title-text'>输入订单号</span>
+      <span class="nav-title-image" style="height:{{navH}}px;line-height:{{navH}}px;">
+        <image src='../../assets/image/back.png' mode='aspectFit' class='back'></image>
+      </span>
+    </view>
+  </view> -->
+  <component-nav>输入订单号</component-nav>
+  <view class='my_body'>
     <form bindsubmit="integral_submit" class='my_form'>
       <view class="form_section top_item_wrap">
         <input name="transation_code" class='form_input' placeholder="请输入订单号" />
-       
+
       </view>
       <view class="btn-area">
         <button type="primary" formType="submit">获取积分</button>

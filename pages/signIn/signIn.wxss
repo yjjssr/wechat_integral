@@ -3,6 +3,7 @@
 padding:15rpx;
 background-color:#fce3bd;
 border-radius:50%;
+margin-top: 50rpx;
 
 }
 .sign_in{

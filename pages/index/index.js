@@ -3,7 +3,6 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
 Page({
   data: {
     motto: 'Hello World',
@@ -20,6 +19,10 @@ Page({
     })
   },
   onLoad: function () {
+    this.setData({
+      navH: app.globalData.navHeight,
+      navTop: app.globalData.navTop
+    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -47,6 +50,14 @@ Page({
       })
     }
   },
+  onShow: function () {
+    if (typeof this.getTabBar === 'function' &&
+      this.getTabBar()) {
+      this.getTabBar().setData({
+        selected: 0
+      })
+    }
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -63,6 +74,7 @@ Page({
   },
   integral_submit: function (e) {
     console.log('获取积分，携带数据为：', e.detail.value)
-  },
+  }
+ 
  
 })

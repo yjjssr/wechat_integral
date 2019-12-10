@@ -1,6 +1,27 @@
 //app.js
 App({
   onLaunch: function () {
+    //当使用自定义tabbar时需要将默认的tabbar隐藏
+    wx.hideTabBar({
+      fail: function () {
+        setTimeout(function () {
+          wx.hideTabBar()
+        }, 500)
+      }
+    });
+    //获取状态栏高度
+    wx.getSystemInfo({
+      success: res=>{
+        let menuRectObj = wx.getMenuButtonBoundingClientRect()
+        let top = menuRectObj.top
+        let height = menuRectObj.height
+        this.globalData.navHeight=height
+        this.globalData.navTop = top 
+       
+      },fail(err){
+        console.log(err)
+      }
+    })
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -35,6 +56,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    navHeight:0,
+    navTop:0
   }
 })

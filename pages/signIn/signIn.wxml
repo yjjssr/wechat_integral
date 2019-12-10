@@ -1,5 +1,6 @@
 <!--pages/signIn/signIn.wxml-->
 <view class="container">
+ <component-nav>释放积分</component-nav>
 <view class='my_body'>
   <view class='sign_in_wrap'>
     <view class='sign_in {{is_diable?"disable_button_bg":"enable_button_bg"}}'>

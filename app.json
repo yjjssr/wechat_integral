@@ -11,19 +11,20 @@
     "navigationStyle": "custom"
   },
   "tabBar": {
+    "custom": true,
     "color": "#dbdbdb",
     "selectedColor": "#e5971f",
     "list": [
       {
         "text": "获取积分",
-        "iconPath": "pages/assets/image/gift_inactive.png",
-        "selectedIconPath": "pages/assets/image/gift_active.png",
+        "iconPath": "assets/image/gift_inactive.png",
+        "selectedIconPath": "assets/image/gift_active.png",
         "pagePath": "pages/index/index"
       },
       {
-        "text": "签到",
-        "iconPath": "pages/assets/image/sign_inactive.png",
-        "selectedIconPath": "pages/assets/image/sign_active.png",
+        "text": "释放积分",
+        "iconPath": "assets/image/sign_inactive.png",
+        "selectedIconPath": "assets/image/sign_active.png",
         "pagePath": "pages/signIn/signIn"
       }
     ]

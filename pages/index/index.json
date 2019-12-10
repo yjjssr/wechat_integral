@@ -1,3 +1,6 @@
 {
-"navigationBarTitleText": "获取积分"
+"navigationBarTitleText": "获取积分",
+"usingComponents": {
+  "component-nav":"../../components/custom-nav-bar"
+}
 }
