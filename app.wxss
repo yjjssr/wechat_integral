@@ -16,7 +16,9 @@ page {
   box-sizing: border-box;
   /* padding-top: 20rpx; */
   overflow: auto;
-  padding-bottom: 30rpx;
+  /* padding-bottom: 30rpx; */
+  padding-bottom:48px;
+
 }
 
 .my_body {
@@ -25,6 +27,7 @@ page {
   box-sizing: border-box;
   text-align: center;
   padding-top: 20%;
+  padding-bottom: 20rpx;
 }
 
 .my_form {

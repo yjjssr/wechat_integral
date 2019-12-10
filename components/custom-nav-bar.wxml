@@ -1,7 +1,7 @@
   <view class='nav'>
     <view class='nav-title' style='top:{{navTop}}px;height:{{navH}}px;line-height:{{navH}}px;'>
       <span class='nav-title-text'><slot /></span>
-      <span class="nav-title-image" style="height:{{navH}}px;line-height:{{navH}}px;">
+      <span wx:if="{{showBack}}" class="nav-title-image" style="height:{{navH}}px;line-height:{{navH}}px;">
         <image src='../assets/image/back.png' mode='aspectFit' class='back'></image>
       </span>
     </view>
