@@ -32,12 +32,13 @@
 
       </form>
     </view>
-
+    <view class='skip_wrap'>
     <view class='skip_to_app'>
+     
       <button type="primary">进入积分商城消费</button>
     </view>
-
-
+    </view>
+    
   </view>
 
 </view>

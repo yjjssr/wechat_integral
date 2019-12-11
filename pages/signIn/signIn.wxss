@@ -87,13 +87,14 @@ color: #fff;
   background-image: linear-gradient(#fab519, #fa6607)
 
 }
-.skip_to_app{
+.skip_wrap{
   position: fixed;
-  bottom: 48px;
-  margin-bottom: 20px;
-  right: 0;
+  bottom: 0;
+   right: 0;
   left: 0;
+  top: 0;
   padding: 0 20rpx;
+ padding-bottom: 48px;
  
 }
 .skip_to_app button{
