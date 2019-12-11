@@ -9,14 +9,16 @@ App({
         }, 500)
       }
     });
+    //获取胶囊菜单的位置和高度
+    let menuRectObj = wx.getMenuButtonBoundingClientRect()
+    let top = menuRectObj.top
+    let height = menuRectObj.height
+    this.globalData.navHeight = height
+    this.globalData.navTop = top 
     //获取状态栏高度
     wx.getSystemInfo({
       success: res=>{
-        let menuRectObj = wx.getMenuButtonBoundingClientRect()
-        let top = menuRectObj.top
-        let height = menuRectObj.height
-        this.globalData.navHeight=height
-        this.globalData.navTop = top 
+        this.globalData.language = res.language
        
       },fail(err){
         console.log(err)

@@ -1,6 +1,3 @@
-
-
-//index.js
 //获取应用实例
 const app = getApp()
 Page({
@@ -19,6 +16,7 @@ Page({
     })
   },
   onLoad: function () {
+  
     this.setData({
       navH: app.globalData.navHeight,
       navTop: app.globalData.navTop
@@ -51,6 +49,7 @@ Page({
     }
   },
   onShow: function () {
+    //设置自定义tabbar的选中态
     if (typeof this.getTabBar === 'function' &&
       this.getTabBar()) {
       this.getTabBar().setData({

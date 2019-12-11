@@ -1,39 +1,43 @@
 <!--pages/signIn/signIn.wxml-->
 <view class="container">
- <component-nav >释放积分</component-nav>
-<view class='my_body'>
-  <view class='sign_in_wrap'>
-    <view class='sign_in {{is_diable?"disable_button_bg":"enable_button_bg"}}'>
-      <button class="sign_in_button " hover-class="none" disabled='{{is_diable}}' bindtap='sign_in'>签到</button>
+  <component-nav>释放积分</component-nav>
+  <view class='my_body'>
+    <view class='sign_in_wrap'>
+      <view class='sign_in {{is_diable?"disable_button_bg":"enable_button_bg"}}'>
+        <button class="sign_in_button " hover-class="none" disabled='{{is_diable}}' bindtap='sign_in'>签到</button>
+      </view>
     </view>
-  </view>
 
-  <view class='table'>
-    <view class="tr">
-      <view class='th'>积分余额</view>
-      <view class='th'>可提现</view>
-      <view class='th'>待释放</view>
+    <view class='table'>
+      <view class="tr">
+        <view class='th'>积分余额</view>
+        <view class='th'>可提现</view>
+        <view class='th'>待释放</view>
+      </view>
+      <view class="tr">
+        <view class='th without_border_top'>1</view>
+        <view class='th without_border_top'>2</view>
+        <view class='th without_border_top'>3</view>
+      </view>
     </view>
-    <view class="tr">
-      <view class='th without_border_top'>1</view>
-      <view class='th without_border_top'>2</view>
-      <view class='th without_border_top'>3</view>
+    <view class='form_wrap'>
+      <form bindsubmit="extractSubmit" class='my_form'>
+        <view class="form_section">
+          <input name="extract_number" class='form_input' placeholder="请输入提取数量" type="number" />
+          <view class='extarct_bottom'>最大提取金额 : 20</view>
+        </view>
+        <view class="extract_button_wrap">
+          <button type="primary" formType="submit">确认提取</button>
+        </view>
+
+      </form>
     </view>
+
+    <view class='skip_to_app'>
+      <button type="primary">进入积分商城消费</button>
+    </view>
+
+
   </view>
-  <view class='form_wrap'>
-    <form bindsubmit="extractSubmit" class='my_form'>
-      <view class="form_section">
-        <input name="extract_number" class='form_input' placeholder="请输入提取数量" />
-        <view class='extarct_bottom'>最大提取金额 : 20</view>
-      </view>
-      <view class="extract_button_wrap">
-        <button type="primary" formType="submit">确认提取</button>
-      </view>
-      <view class='skip_to_app'>
-        <button type="primary">进入积分商城消费</button>
-      </view>
-    </form>
-  </view>
-</view>
 
 </view>

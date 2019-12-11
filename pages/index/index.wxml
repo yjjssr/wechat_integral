@@ -4,7 +4,7 @@
   <view class='my_body'>
     <form bindsubmit="integral_submit" class='my_form'>
       <view class="form_section top_item_wrap">
-        <input name="transation_code" class='form_input' placeholder="请输入订单号" />
+        <input name="transation_code" class='form_input' placeholder="请输入订单号"  />
 
       </view>
       <view class="btn-area">

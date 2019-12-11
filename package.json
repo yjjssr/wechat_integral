@@ -1,0 +1,23 @@
+{
+  "name": "wechat_integral",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yjjssr/wechat_integral.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yjjssr/wechat_integral/issues"
+  },
+  "homepage": "https://github.com/yjjssr/wechat_integral#readme",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
