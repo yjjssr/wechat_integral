@@ -1,103 +1,158 @@
-.sign_in_wrap{
-  display:inline-block;
-padding:15rpx;
-background-color:#fce3bd;
-border-radius:50%;
-margin-top: 50rpx;
+.sign_in_wrap {
+  display: inline-block;
+  padding: 15rpx;
+  background-color: #fce3bd;
+  border-radius: 50%;
+  margin-top: 50rpx;
+}
 
+.sign_in {
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto;
+  line-height: 2.56;
+  border-radius: 50%;
+  width: 66px;
+  text-align: center;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.sign_in{
-box-sizing:border-box;
-font-size:18px;
-color:#fff;
-margin: 0 auto;
-line-height:2.56;
-border-radius:50%;
-width:66px;
-text-align:center;
-height:66px;
-display:flex;
-align-items:center;
-justify-content:center;
-}
-.disable_button_bg{
-  background-color: #F7F7F7;
-} 
-.enable_button_bg{
-background-color:#fad045;
 
+.disable_button_bg {
+  background-color: #f7f7f7;
 }
-.sign_in_button{
-  background-color:transparent;
+
+.enable_button_bg {
+  background-color: #fad045;
+}
+
+.sign_in_button {
+  background-color: transparent;
   color: #fff;
 }
 
-.sign_in_button[disabled]{
-   background-color:transparent !important;
+.sign_in_button[disabled] {
+  background-color: transparent !important;
 }
 
-button[class="sign_in_button"]::after{
+button[class="sign_in_button"]::after {
   border: none;
 }
-.table{
+
+.table {
   margin-top: 80rpx;
-  background-color:#fff;
-border-radius:20rpx;
-font-weight:bold;
-
-
+  background-color: #fff;
+  border-radius: 20rpx;
+  font-weight: bold;
 }
-.tr{
+
+.tr {
   display: flex;
-  
 }
-.tr:first-child{
- border-bottom: 1px solid #F1F1F1;
+
+.tr:first-child {
+  border-bottom: 1px solid #f1f1f1;
 }
-.th{
+
+.th {
   flex: 1;
-  padding:15rpx;
-
-}
-.th:not(:last-child){
-  border-right: 1px solid #F1F1F1;
+  padding: 15rpx;
 }
 
-.without_border_top{
+.th:not(:last-child) {
+  border-right: 1px solid #f1f1f1;
+}
+
+.without_border_top {
   color: #e5971f;
-  padding:30rpx;
-
+  padding: 30rpx;
 }
-.form_wrap{
+
+.form_wrap {
   margin-top: 60rpx;
 }
 
-.extarct_bottom{
-  margin-top:20rpx;
-font-size:30rpx;
-text-align:right;
-color: #fff;
-
+.extarct_bottom {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  text-align: right;
+  color: #fff;
 }
-.extract_button_wrap{
+
+.extract_button_wrap {
   display: flex;
 }
-.extract_button_wrap button{
-  
-  background-image: linear-gradient(#fab519, #fa6607)
 
+.extract_button_wrap button {
+  background-image: linear-gradient(#fab519, #fa6607);
 }
-.skip_wrap{
+
+.skip_wrap {
   position: fixed;
   bottom: 0;
-   right: 0;
+  right: 0;
   left: 0;
   top: 0;
-  padding: 0 20rpx;
- padding-bottom: 48px;
+  padding: 0 80rpx;
+  margin-bottom: 48px;
+  background-color:rgba(0,0,0,0.4);
+}
+.toast_wrap{
+position:absolute;
+right:0;
+left:0;
+padding:0 80rpx;
+bottom:50%;
+transform:translateY(50%);
+}
+.toast_body{
+  background-color:#fff;
+border-radius:20rpx;
+overflow:auto;
+text-align:center;
+padding: 20rpx 20rpx 50rpx;
+
+}
+.toast_operate_wrap{
+ width:40rpx;
+height:40rpx;
+float: right;
  
 }
-.skip_to_app button{
-  margin-top: 50rpx;
+.toast_operate_wrap image{
+  width: 100%;
+  height: 100%;
+}
+.toast_image_wrap{
+  width: 60px;
+  height: 60px;
+  margin:60rpx auto 30rpx;
+}
+.toast_image_wrap image{
+  width: 100%;
+  height: 100%;
+}
+.toast_text{
+  color: #676767;
+}
+.toast_text cover-view{
+  padding: 20rpx;
+}
+.skip_to_app {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 80rpx;
+}
+
+.skip_to_app button {
+  /* margin-top: 50rpx; */
   background-color: #ffa800;
+}
+.guide_image{
+  width: 100%;
+  height: 160rpx;
 }

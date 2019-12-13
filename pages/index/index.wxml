@@ -4,13 +4,33 @@
   <view class='my_body'>
     <form bindsubmit="integral_submit" class='my_form'>
       <view class="form_section top_item_wrap">
-        <input name="transation_code" class='form_input' placeholder="请输入订单号"  />
+        <input name="transation_code" class='form_input' placeholder="请输入订单号" />
 
       </view>
       <view class="btn-area">
-        <button type="primary" formType="submit">获取积分</button>
+        <button type="primary" form-type="submit">获取积分</button>
       </view>
     </form>
+  </view>
+  <view class='my_cover' wx:if="{{is_cover}}">
+    <view class='toast_body'>
+      <view class='toast_image_wrap'>
+        <image src='../../assets/image/success.png' mode='aspectFit'></image>
+      </view>
+      <view class='toast_display'>
+        <view class='text_wrap'>
+          <view class='text_image'>
+            <image class="add_bg" src='../../assets/image/bg.jpg' mode='aspectFit'></image>
+            <view class='add_text'> +130</view>
+          </view>
+          <view> 成功获取130分</view>
+        </view>
+        <view class='button_wrap'>
+          <button bindtap='close_cover'>返回</button>
+        </view>
+
+      </view>
+    </view>
   </view>
 
   <!-- <view class="userinfo">

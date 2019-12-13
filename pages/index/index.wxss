@@ -1,4 +1,5 @@
 /**index.wxss**/
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -19,36 +20,125 @@
 .usermotto {
   margin-top: 200px;
 }
-.my-tabbar{
+
+.my-tabbar {
   display: flex;
   text-align: center;
   width: 100%;
-  justify-content:space-around;
-  align-items:center;
-  font-size:30rpx;
-  padding:10rpx 50rpx;
-  margin-bottom:30rpx;
-  box-sizing:border-box;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30rpx;
+  padding: 10rpx 50rpx;
+  margin-bottom: 30rpx;
+  box-sizing: border-box;
 }
-.tabbar-item{
+
+.tabbar-item {
   width: 50%;
   padding: 20rpx 0;
 }
-.tabbar-active{
-  color:#179B16;
-  border-bottom: 2px solid #179B16;
+
+.tabbar-active {
+  color: #179b16;
+  border-bottom: 2px solid #179b16;
 }
-.top_item_wrap{
+
+.top_item_wrap {
   margin: 80rpx 0;
 }
-.btn-area{
+
+.btn-area {
   display: flex;
   margin-top: 120rpx;
 }
-.btn-area button{
-  background-image: linear-gradient(#fab519, #fa6607)
+
+.btn-area button {
+  background-image: linear-gradient(#fab519, #fa6607);
 }
 
+.my_cover {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  right: 0;
+  left: 0;
+  padding: 0 80rpx;
+}
 
+.toast_body {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 0 30rpx;
+  bottom: 50%;
+  transform: translateY(50%);
+  text-align: center;
+}
 
+.toast_image_wrap {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 30px;
+  margin: 0 auto;
+   z-index: 2;
+}
 
+.toast_image_wrap image {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.toast_display {
+  background-color: #fff;
+  border-radius: 30rpx;
+  /* display:flex;
+  flex-direction:column; *//* margin: 0 30rpx; */
+}
+
+.text_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fa8c10;
+  height: 500rpx;
+}
+
+.text_image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.text_image .add_bg {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text_image .add_text {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button_wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 55rpx 20rpx 20rpx;
+  color: #fa8c10;
+}
+
+.button_wrap button {
+  line-height: 1.8;
+  font-size: 32rpx;
+  width: 40%;
+  background-color: #fa8c10;
+  border-radius: 30rpx;
+  color: #fff;
+}

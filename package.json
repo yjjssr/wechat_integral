@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/yjjssr/wechat_integral#readme",
   "dependencies": {
-    "moment": "^2.24.0"
-  }
+    "moment": "^2.24.0",
+    "regenerator": "^0.13.1"
+  },
+  "devDependencies": {}
 }

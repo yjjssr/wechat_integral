@@ -1,3 +1,6 @@
+import {get,post} from '../../utils/request.js'
+
+
 //获取应用实例
 const app = getApp()
 Page({
@@ -7,7 +10,8 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     active_index:0,
-    is_diable:false
+    is_diable:false,
+    is_cover:false//是否显示遮罩
   },
   //事件处理函数
   bindViewTap: function() {
@@ -73,6 +77,17 @@ Page({
   },
   integral_submit: function (e) {
     console.log('获取积分，携带数据为：', e.detail.value)
+    this.setData({
+      is_cover:true
+    })
+    wx.createSelectorQuery().select('.button_wrap').boundingClientRect(res=>{
+      console.log(res)
+    }).exec()
+  },
+  close_cover:function(){
+    this.setData({
+      is_cover: false
+    })
   }
  
  

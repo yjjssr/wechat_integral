@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    is_diable: false
+    is_diable: false,
+    is_cover:false
 
   },
 
@@ -92,6 +93,20 @@ Page({
     })
   },
   extractSubmit: function(e) {
+    let _this=this
     console.log('提取积分，携带数据为：', e.detail.value)
+    _this.setData({
+      is_cover: true
+    })
+    
+  
+  },
+  closeToast:function(){
+    this.setData({
+      is_cover: false
+    })
+  },
+  test:function(){
+    console.log("进入积分商城")
   }
 })
